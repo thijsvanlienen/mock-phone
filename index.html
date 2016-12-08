@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>mock-phone, thijsvanlienen</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="test">
+        
+        Insert your phone prototype ;-)
+
+
+    </div>
+
+<style> 
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Helvetica, Arial, sans-serif;
+    color: grey;
+}
+
+.test{
+ 
+    position: relative;
+    height: 640px;
+    width: 360px;
+    background-color: #eee;
+    padding: 1em;
+}
+.test::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -50px;
+    left: -15px;
+    border: 50px solid grey;
+    border-left: 15px solid grey;
+    border-right: 15px solid grey;
+    box-sizing: content-box;
+    border-radius: 40px;
+    border-bottom: 100px solid grey;
+}
+.test::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: #aaa;
+    top: 103%;
+    left: 44%;
+    box-sizing: content-box;
+    border-radius: 100%;
+}
+
+</style>
+
+
+    </body>
+</html>

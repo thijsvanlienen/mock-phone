@@ -2,33 +2,31 @@
 Simple css solution to mock phone
 
 ## How to use
-Apply these styles to any a element and a phone will appear.
+Add below css and apply class 'mock-phone' an element and a phone will appear ;-)
+See index file for example.
 
 ```css
-section.preview-container::before {
+.phone-mock::before {
     content: "";
     display: block;
     position: absolute;
-    height: 100%;
-    width: 100%;
-    top: -50px;
-    left: -15px;
-    border: 50px solid grey;
-    border-left: 15px solid grey;
-    border-right: 15px solid grey;
-    box-sizing: content-box;
-    border-radius: 40px;
-    border-bottom: 100px solid grey;
+    height: 120%;
+    width: 110%;
+    top: -10%;
+    left: -5%;
+    border-radius: 30px;
+    background-color: grey;
+    z-index: -1;
 }
-section.preview-container::after {
+.phone-mock::after {
     content: "";
     display: block;
     position: absolute;
-    height: 50px;
-    width: 50px;
+    width: 10%;
+    padding-bottom: 10%;
     background: #aaa;
-    top: 103%;
-    left: 44%;
+    top: 102%;
+    left: 45%;
     box-sizing: content-box;
     border-radius: 100%;
 }
